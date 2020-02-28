@@ -1,0 +1,141 @@
+\documentclass{qutad} % For APA bibliography style
+%\documentclass[ieee]{qutad} % For IEEE bibliography style
+
+% Title of the report
+\title{Title of The Thesis}
+
+% Your name, use the official name on your transcript.
+\author{Your Name}
+
+% Degree conferral date (January or June)
+\def \submitted{June 2020}
+
+% Year in which the copyright is secured by publication of the dissertation.
+\def \copyrightyear{2020}
+
+% Date of the defense
+\def \defensedate{01/06/2020}
+
+% The college
+\def \college{College of Engineering}
+
+% Name of the Dean of your college
+\def \collegedean{Khalid Kamal Naji}
+
+% Thesis for a master's, Dissertation for a PhD
+\def \degreetype{Thesis}
+
+% Check with your graduate coordinator for the title of your program's degree.
+\def \degree{Master of Science in Computing}
+
+% Full name of your adviser
+\def \adviser{Dr. Supervisor}
+
+% Co-adviser, if needed
+%\def \coadviser{Dr. Coadvisor}
+
+% Name of first committee member
+\def \committeeone{Dr. Committee One}
+
+% Name of second committee member
+\def \committeetwo{Dr. Committee Two}
+
+% Name of third committee member, if needed.
+%\def \committeethree{Dr. Committee Three}
+
+\abstract{
+  [LAST NAME, FIRST NAME, MIDDLE INITIAL.], [Masters/Doctorate] : [January/June] : [Year], [Degree / Program Type] \\
+  \noindent Title: [Type Title in Title Case [Initial Caps]: Do Not Capitalize Coordinating Conjunctions [and, but, for, nor, or, so, yet], Prepositions, and Articles] \\
+  \noindent Supervisor of [Thesis/Dissertation]: [Advisor’s First Name, Middle Initial, Last name only].
+
+  An abstract is a concise account of the thesis or dissertation and should state the problem, describe the procedure or method used, and summarize the conclusions reached. An abstract is required for all papers. A maximum of 350 words are recommended for dissertations and a maximum of 150 for theses. Format the paragraphs with the same layout used in the document. All lines on this page are double spaced.
+}
+
+\def \dedication {
+  A simple, optional note dedicating the work to a single person or small group of persons.
+
+  The dedication is centered, typically in italic and rarely more than 3-4 lines.
+}
+
+\def \acknowledgments {
+  The Acknowledgments page is optional. This page includes a brief, professional acknowledgment of the assistance received from individuals, advisor, faculty, and institution.
+}
+
+\begin{document}
+
+\makefrontmatter
+
+\chapter{Introduction}
+Sample chapter with a sample figure \ref{thefig}.
+\lipsum
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[width=0.7\linewidth]{samplefig.png}
+  \caption{Sample figure}
+  \label{thefig}
+\end{figure}
+
+\chapter{Another chapter}
+Here are some sections and subsections. This is level 1.
+\lipsum
+
+\section{Sample section}
+This is level 2.
+\lipsum
+
+\subsection{Sample subsection}
+This is level 3.
+\lipsum
+
+\subsubsection{Sample subsubsection}
+This is level 4. Table \ref{sampletable} is a sample table with a sample citation in it.
+\lipsum
+
+\begin{table}[H]
+  \begin{center}
+    \setstretch{1}
+    \caption{Sample table \cite{samplebib}}
+    \label{sampletable}
+    \begin{tabular}{m{1.5cm} m{1.5cm} m{5cm}}
+      \hline
+      A & B & C \\~\\
+      \hline
+      1 & 2 & 3 \\
+      4 & 5 & 6 \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\lipsum
+
+{
+  % add the Bibliography to the Table of Contents
+  \cleardoublepage
+  \ifdefined\phantomsection
+  \phantomsection  % makes hyperref recognize this section properly for pdf link
+  \else
+  \fi
+  \addcontentsline{toc}{chapter}{References}
+}
+
+\printbibliography[title = {REFERENCES}]
+
+% Appendices if you need them. Remove this section if you don't.
+\begin{appendices}
+  % If you only have one appendix, uncomment the following line
+  % to make sure it is just called "Appendix" and not "Appendix A".
+  % \renewcommand*{\thechapter}{}
+
+  \chapter{Some extra stuff} \label{app1}
+  Sample appendix.
+  \lipsum
+  
+  \chapter{Other extra stuff} \label{app2}
+  Another appendix.
+  \lipsum
+
+\end{appendices}
+
+\end{document}

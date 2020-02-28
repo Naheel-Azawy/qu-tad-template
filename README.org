@@ -1,0 +1,13 @@
+* QU TAD LaTeX Template
+  This is an attempt to clone [[http://www.qu.edu.qa/research/graduate-studies/current-students/TAD-Services][Qatar University's TAD engineering template]] to LaTeX. Note that it is not official yet.
+
+** Usage
+   ~thesis.tex~ should contain you actual work and ~refs.bib~ is your bibliography file.
+
+   Compile with ~xelatex~ and ~biber~.
+
+** Contribution
+   Pull requests are welcomed. If any difference from the original Word template was found please report an issue.
+
+** License
+   [[https://www.latex-project.org/lppl.txt][LPPL]]
