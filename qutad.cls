@@ -56,6 +56,7 @@
 
 % table of content styles
 \usepackage{titletoc}
+% TODO: Make it as "CHAPTER 1:" and "APPENDIX A:" instead of "1:" and "A:"
 \titlecontents{chapter}[0em]
               {}{\thecontentslabel: }{}
               {\titlerule*{.}\contentspage}
@@ -319,6 +320,7 @@
   \pagenumbering{arabic}
   \setcounter{page}{1}
 
+  % TODO: Fix this workaround
   \newgeometry{lmargin=1.5in,rmargin=1in,tmargin=1in,bmargin=0.75in,includefoot}
 
 }

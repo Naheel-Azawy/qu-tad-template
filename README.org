@@ -7,7 +7,13 @@
    Compile with ~xelatex~ and ~biber~.
 
 ** Contribution
-   Pull requests are welcomed. If any difference from the original Word template was found please report an issue.
+   Pull requests are welcomed. If any difference from the original Word template was found please report an issue. Also, help on the known issues bellow is needed.
+
+** Known issues
+   - [ ] Tables lines thickness is not the same.
+   - [ ] Page margins after the front matter does not include the page number. This has been workaround but a better solution is needed (check the TODO in the cls file).
+   - [ ] Chapters and appendices in the table of content are not written as "CHAPTER 1" and "APPENDIX A" (check the TODO in the cls file).
+   - [ ] (IMPROVEMENT) Automate the beginning of the abstract.
 
 ** License
    [[https://www.latex-project.org/lppl.txt][LPPL]]
