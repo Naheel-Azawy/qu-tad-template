@@ -56,9 +56,8 @@
 
 % table of content styles
 \usepackage{titletoc}
-% TODO: Make it as "CHAPTER 1:" and "APPENDIX A:" instead of "1:" and "A:"
 \titlecontents{chapter}[0em]
-              {}{\thecontentslabel: }{}
+              {}{\@chapapp\ \thecontentslabel: }{}
               {\titlerule*{.}\contentspage}
 \titlecontents{section}[1em]
               {}{}{}
@@ -72,6 +71,11 @@
 \titlecontents{figure}[0em]
               {}{Figure \thecontentslabel. }{}
               {\titlerule*{.}\contentspage}
+% For the appendices https://tex.stackexchange.com/a/148573/167019
+\usepackage{appendix}
+\g@addto@macro\appendices{
+  \addtocontents{toc}{\protect\renewcommand{\protect\@chapapp}{\appendixname}}
+}
 
 % lists styles
 \renewcommand{\contentsname}{\hfill\normalfont\fontsize{14pt}{12pt}\selectfont TABLE OF CONTENTS\hfill}
@@ -89,6 +93,9 @@
   \renewcommand{\headrulewidth}{0pt} % remove top bar
   \fancyfoot[R]{\thepage} % set page number to the right
 }
+
+% Thicker tables hlines
+\setlength{\arrayrulewidth}{1.5pt}
 
 % Parts of this section are borrowed from:
 % https://github.com/rriley/qu-thesis
@@ -157,9 +164,6 @@
 \usepackage{enumitem}
 \usepackage{longtable}
 \newcolumntype{x}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-
-% appendix package to make the appendices correct in the TOC.
-\usepackage[titletoc]{appendix}
 
 % To allow for clickable (hyper-referencing) in-text citations, figure #s,
 % and sections in-text referencing
