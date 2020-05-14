@@ -95,7 +95,15 @@
 }
 
 % Thicker tables hlines
-\setlength{\arrayrulewidth}{1.5pt}
+\setlength{\arrayrulewidth}{1.4pt}
+
+% Left align captions
+\usepackage{caption}
+\captionsetup{
+  justification=raggedright,
+  singlelinecheck=false,
+  belowskip=12pt,
+  aboveskip=10pt}
 
 % Parts of this section are borrowed from:
 % https://github.com/rriley/qu-thesis
@@ -188,14 +196,14 @@
   % COVER PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \thispagestyle{empty}
   \begin{center}
-    \setstretch{3}
+    \setstretch{2.8}
     QATAR UNIVERSITY \\
     \MakeUppercase{\college} \\
     \MakeUppercase{\thetitle} \\
     BY \\
     \MakeUppercase{\theauthor}
   \end{center}
-  \vfill
+  \vspace*{\fill}
   \begin{center}
     \setstretch{2}
     A \degreetype\ Submitted to \\
@@ -203,11 +211,12 @@
     in Partial Fulfillment of the Requirements for the Degree of \\
     \degree
   \end{center}
+   \vspace{0.5cm}
   \begin{center}
-    \setstretch{3}
-    \submitted \\
-    \copyright\ \copyrightyear\ \theauthor. All Rights Reserved.
+    \submitted \\ \vspace{0.4cm}
+    \copyright\ \copyrightyear. \theauthor. All Rights Reserved.
   \end{center}
+  \vspace{1.7cm}
   \newpage
 
   \newgeometry{lmargin=1.5in,rmargin=1in,tmargin=1in,bmargin=1in,includehead,includefoot}
