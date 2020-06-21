@@ -213,7 +213,7 @@
   \end{center}
    \vspace{0.5cm}
   \begin{center}
-    \submitted \\ \vspace{0.4cm}
+    \submittedmonth\, \submittedyear \\ \vspace{0.4cm}
     \copyright\ \copyrightyear. \theauthor. All Rights Reserved.
   \end{center}
   \vspace{1.7cm}
@@ -282,6 +282,9 @@
     \fontsize{14pt}{12pt}\selectfont
     ABSTRACT
   \end{center}
+  \authorabstract, \ifthenelse{\equal{\degreetype}{Thesis}}{Masters}{Doctorate} : \submittedmonth : \submittedyear, \degree \\
+  \noindent Title: \thetitle \\
+  \noindent Supervisor of \degreetype: \adviser. \\
   \@abstract
 
   \newpage

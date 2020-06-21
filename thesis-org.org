@@ -1,0 +1,133 @@
+#+LaTeX_CLASS: qutad
+#+OPTIONS: toc:nil title:nil
+
+# APA bibliography style is used by default
+# Uncomment the line below to enable IEEE style
+# #+LaTeX_CLASS_OPTIONS: [ieee]
+
+# Type Title in Title Case [Initial Caps]: Do Not Capitalize Coordinating Conjunctions [and, but, for, nor, or, so, yet], Prepositions, and Articles
+#+TITLE: Title of The Thesis
+
+# Your name, use the official name on your transcript.
+#+AUTHOR: Your Full Name
+
+# Your name in the format [LAST NAME, FIRST NAME, MIDDLE INITIAL.]
+# Used in the abstract
+#+LaTeX_HEADER: \def \authorabstract{NAME, YOUR, F.}
+
+# Degree conferral date (January or June)
+#+LaTeX_HEADER: \def \submittedmonth{June}
+
+# Degree conferral year
+#+LaTeX_HEADER: \def \submittedyear{2020}
+
+# Year in which the copyright is secured by publication of the dissertation.
+#+LaTeX_HEADER: \def \copyrightyear{2020}
+
+# Date of the defense
+#+LaTeX_HEADER: \def \defensedate{01/06/2020}
+
+# The college
+#+LaTeX_HEADER: \def \college{College of Engineering}
+
+# Name of the Dean of your college
+#+LaTeX_HEADER: \def \collegedean{Khalid Kamal Naji}
+
+# Thesis for a master's, Dissertation for a PhD
+#+LaTeX_HEADER: \def \degreetype{Thesis}
+
+# Check with your graduate coordinator for the title of your program's degree.
+#+LaTeX_HEADER: \def \degree{Master of Science in Computing}
+
+# Full name of your adviser
+#+LaTeX_HEADER: \def \adviser{Dr. Supervisor}
+
+# Co-adviser, if needed
+# #+LaTeX_HEADER: \def \coadviser{Dr. Coadvisor}
+
+# Name of first committee member
+#+LaTeX_HEADER: \def \committeeone{Dr. Committee One}
+
+# Name of second committee member
+#+LaTeX_HEADER: \def \committeetwo{Dr. Committee Two}
+
+# Name of third committee member, if needed.
+# #+LaTeX_HEADER: \def \committeethree{Dr. Committee Three}
+
+#+LaTeX_HEADER: \abstract{
+#+LaTeX_HEADER:   An abstract is a concise account of the thesis or dissertation and should state the problem, describe the procedure or method used, and summarize the conclusions reached. An abstract is required for all papers. A maximum of 350 words are recommended for dissertations and a maximum of 150 for theses. Format the paragraphs with the same layout used in the document. All lines on this page are double spaced.
+#+LaTeX_HEADER: }
+
+#+LaTeX_HEADER: \def \dedication {
+#+LaTeX_HEADER:   A simple, optional note dedicating the work to a single person or small group of persons.
+#+LaTeX_HEADER: 
+#+LaTeX_HEADER:   The dedication is centered, typically in italic and rarely more than 3-4 lines.
+#+LaTeX_HEADER: }
+
+#+LaTeX_HEADER: \def \acknowledgments {
+#+LaTeX_HEADER:   The Acknowledgments page is optional. This page includes a brief, professional acknowledgment of the assistance received from individuals, advisor, faculty, and institution.
+#+LaTeX_HEADER: }
+
+#+LaTeX: \makefrontmatter
+
+* Introduction
+  Sample chapter with a sample figure ref:thefig.
+  #+LaTeX: \lipsum
+
+  #+CAPTION: Sample figure label:thefig
+  [[./samplefig.png]]
+
+* Another chapter
+  Here are some sections and subsections. This is level 1.
+  #+LaTeX: \lipsum
+
+** Sample section
+   This is level 2.
+   #+LaTeX: \lipsum
+
+*** Sample subsection
+    This is level 3.
+    #+LaTeX: \lipsum
+
+**** Sample subsubsection
+     This is level 4. Table ref:sampletable is a sample table with a sample citation in it.
+     #+LaTeX: \lipsum
+
+     #+CAPTION: Sample table cite:samplebib label:sampletable
+     #+ATTR_LaTeX: :align m{1.5cm} m{1.5cm} m{5cm}
+     |---+---+---|
+     | A | B | C |
+     |---+---+---|
+     | 1 | 2 | 3 |
+     | 4 | 5 | 6 |
+     |---+---+---|
+
+     #+LaTeX: \lipsum
+
+#+LaTeX: {
+#+LaTeX:   % add the Bibliography to the Table of Contents
+#+LaTeX:   \cleardoublepage
+#+LaTeX:   \ifdefined\phantomsection
+#+LaTeX:   \phantomsection  % makes hyperref recognize this section properly for pdf link
+#+LaTeX:   \else
+#+LaTeX:   \fi
+#+LaTeX:   \addcontentsline{toc}{chapter}{References}
+#+LaTeX: }
+
+#+LaTeX: \printbibliography[title = {REFERENCES}]
+
+# Appendices if you need them. Remove this section if you don't.
+#+LaTeX: \begin{appendices}
+#+LaTeX:   % If you only have one appendix, uncomment the following line
+#+LaTeX:   % to make sure it is just called "Appendix" and not "Appendix A".
+#+LaTeX:   % \renewcommand*{\thechapter}{}
+#+LaTeX: 
+#+LaTeX:   \chapter{Some extra stuff} \label{app1}
+#+LaTeX:   Sample appendix.
+#+LaTeX:   \lipsum
+#+LaTeX:   
+#+LaTeX:   \chapter{Other extra stuff} \label{app2}
+#+LaTeX:   Another appendix.
+#+LaTeX:   \lipsum
+#+LaTeX: 
+#+LaTeX: \end{appendices}

@@ -1,19 +1,21 @@
 * QU TAD LaTeX Template
   This is an attempt to clone [[http://www.qu.edu.qa/research/graduate-studies/current-students/TAD-Services][Qatar University's TAD engineering template]] to LaTeX. Note that it is not official yet.
 
+** Is this usable?
+   Some students confirmed submitting using this template for Spring 2020. So, probably yes. If anything is wrong TAD would reply specifying their comments. If they do and you don't know how to fix it, start an issue here.
+
 ** Usage
    ~thesis.tex~ should contain you actual work and ~refs.bib~ is your bibliography file.
 
    Compile with ~xelatex~ and ~biber~.
 
+   ~thesis-org.org~ can be also used if you are an Emacs org-mode user. You would also need to evaluate ~qutad.el~ to add the LaTeX class. You can also add its content to your Emacs init file if you like.
+
 ** Contribution
    Pull requests are welcomed. If any difference from the original Word template was found please report an issue. Also, help on the known issues bellow is needed.
 
 ** Known issues
-   - [X] +Tables lines thickness is not the same.+
-   - [X] +Chapters and appendices in the table of content are not written as "CHAPTER 1" and "APPENDIX A" (check the TODO in the cls file).+
-   - [ ] Page margins after the front matter does not include the page number. This has been workaround but a better solution is needed (check the TODO in the cls file).
-   - [ ] (IMPROVEMENT) Automate the beginning of the abstract.
+   No known issues so far. If you find any, start an issue here.
 
 ** License
    [[https://www.latex-project.org/lppl.txt][LPPL]]
