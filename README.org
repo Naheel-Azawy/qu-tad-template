@@ -7,9 +7,27 @@
 ** Usage
    ~thesis.tex~ should contain you actual work and ~refs.bib~ is your bibliography file.
 
-   Compile with ~xelatex~ and ~biber~.
+   Compile with ~xelatex~ and ~biber~. It should work fine with most LaTeX tools like Overleaf, TeXstudio, and others.
 
    ~thesis-org.org~ can be also used if you are an Emacs org-mode user. You would also need to evaluate ~qutad.el~ to add the LaTeX class. You can also add its content to your Emacs init file if you like.
+
+** Files details
+   Every file in this repository has a purpose. The list below explains the role of every file.
+
+   |----------------+-------------------------------------------------------------------------------------------|
+   | File           | Details                                                                                   |
+   |----------------+-------------------------------------------------------------------------------------------|
+   | thesis.pdf     | An example compiled PDF. Only used to showcase the template. Can be removed.              |
+   | thesis.tex     | The main TeX file you will be editing to write your content.                              |
+   | refs.bib       | The bibliography file. Edit to add your references.                                       |
+   | qutad.cls      | The class used to build the template. Do not edit this unless you know what you're doing. |
+   | samplefig.png  | Just a sample PNG figure. Remove after writing your actual content.                       |
+   | README.org     | The document you are reading right now.                                                   |
+   | thesis-org.org | Emacs org-mode users only. The equivalent of thesis.tex but in org-mode.                  |
+   | qutad.el       | Emacs org-mode users only. Evaluate this to add the LaTeX class.                          |
+   |----------------+-------------------------------------------------------------------------------------------|
+
+   Note that Emacs org-mode files can be deleted too if not needed.
 
 ** Contribution
    Pull requests are welcomed. If any difference from the original Word template was found please report an issue. Also, help on the known issues bellow is needed.
