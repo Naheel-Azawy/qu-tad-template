@@ -1,9 +1,9 @@
 #+LaTeX_CLASS: qutad
 #+OPTIONS: toc:nil title:nil
 
-# APA bibliography style is used by default
-# Uncomment the line below to enable IEEE style
-# #+LaTeX_CLASS_OPTIONS: [ieee]
+# APA bibliography style is used by default. IEEE style is provided as an option.
+# Comment the line below to enable APA style
+#+LaTeX_CLASS_OPTIONS: [ieee]
 
 # Type Title in Title Case [Initial Caps]: Do Not Capitalize Coordinating Conjunctions [and, but, for, nor, or, so, yet], Prepositions, and Articles
 #+TITLE: Title of The Thesis
@@ -94,7 +94,7 @@
      #+LaTeX: \lipsum
 
      #+CAPTION: Sample table cite:samplebib label:sampletable
-     #+ATTR_LaTeX: :align m{1.5cm} m{1.5cm} m{5cm}
+     #+ATTR_LaTeX: :align x{3cm} x{3cm} x{3cm}
      |---+---+---|
      | A | B | C |
      |---+---+---|
