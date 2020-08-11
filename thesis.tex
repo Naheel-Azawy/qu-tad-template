@@ -5,11 +5,11 @@
 \title{Title of The Thesis}
 
 % Your name, use the official name on your transcript.
-\author{Your Name}
+\author{Full Official Name}
 
 % Your name in the format [LAST NAME, FIRST NAME, MIDDLE INITIAL.]
 % Used in the abstract
-\def \authorabstract{Kamal, Naheel, F.}
+\def \authorabstract{Name, Full, O.}
 
 % Degree conferral date (January or June)
 \def \submittedmonth{June}
@@ -51,10 +51,6 @@
 %\def \committeethree{Dr. Committee Three}
 
 \abstract{
-  [LAST NAME, FIRST NAME, MIDDLE INITIAL.], [Masters/Doctorate] : [January/June] : [Year], [Degree / Program Type] \\
-  \noindent Title: [Type Title in Title Case [Initial Caps]: Do Not Capitalize Coordinating Conjunctions [and, but, for, nor, or, so, yet], Prepositions, and Articles] \\
-  \noindent Supervisor of [Thesis/Dissertation]: [Advisor’s First Name, Middle Initial, Last name only].
-
   An abstract is a concise account of the thesis or dissertation and should state the problem, describe the procedure or method used, and summarize the conclusions reached. An abstract is required for all papers. A maximum of 350 words are recommended for dissertations and a maximum of 150 for theses. Format the paragraphs with the same layout used in the document. All lines on this page are double spaced.
 }
 
@@ -100,19 +96,18 @@ This is level 4. Table \ref{sampletable} is a sample table with a sample citatio
 \lipsum
 
 \begin{table}[H]
-  \begin{center}
-    \setstretch{1}
-    \caption{Sample table \cite{samplebib}}
-    \label{sampletable}
-    \begin{tabular}{m{1.5cm} m{1.5cm} m{5cm}}
-      \hline
-      A & B & C \\~\\
-      \hline
-      1 & 2 & 3 \\
-      4 & 5 & 6 \\
-      \hline
-    \end{tabular}
-  \end{center}
+  \centering
+  \setstretch{1}
+  \caption{Sample table \cite{samplebib}}
+  \label{sampletable}
+  \begin{tabular}{x{3cm} x{3cm} x{3cm}}
+    \hline
+    A & B & C \\~\\
+    \hline
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+    \hline
+  \end{tabular}
 \end{table}
 
 \lipsum
