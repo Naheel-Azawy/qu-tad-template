@@ -22,18 +22,22 @@
    | refs.bib       | The bibliography file. Edit to add your references.                                       |
    | qutad.cls      | The class used to build the template. Do not edit this unless you know what you're doing. |
    | samplefig.png  | Just a sample PNG figure. Remove after writing your actual content.                       |
-   | README.org     | The document you are reading right now.                                                   |
-   | thesis-org.org | Emacs org-mode users only. The equivalent of thesis.tex but in org-mode.                  |
-   | qutad.el       | Emacs org-mode users only. Evaluate this to add the LaTeX class.                          |
    |----------------+-------------------------------------------------------------------------------------------|
 
-   Note that Emacs org-mode files can be deleted too if not needed.
+   For [[https://www.gnu.org/software/emacs/][Emacs]] [[https://orgmode.org/][org-mode]] users, the files below can be used. Note these files can be deleted too if you are not an org-mode user.
+
+   |----------------+-----------------------------------------------|
+   | File           | Details                                       |
+   |----------------+-----------------------------------------------|
+   | thesis-org.org | The equivalent of thesis.tex but in org-mode. |
+   | qutad.el       | Evaluate this to add the LaTeX class.         |
+   |----------------+-----------------------------------------------|
 
 ** Contribution
-   Pull requests are welcomed. If any difference from the original Word template was found please report an issue. Also, help on the known issues bellow is needed.
+   Pull requests are welcomed on the [[https://github.com/Naheel-Azawy/qu-tad-template][repo]]. If any difference from the original Word template was found please report an issue [[https://github.com/Naheel-Azawy/qu-tad-template/issues][here]].
 
 ** Known issues
-   No known issues so far. If you find any, start an issue here.
+   No known issues so far. If you find any, start an issue [[https://github.com/Naheel-Azawy/qu-tad-template/issues][here]].
 
 ** License
    [[https://www.latex-project.org/lppl.txt][LPPL]]
