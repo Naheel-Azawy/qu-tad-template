@@ -10,7 +10,7 @@
 % version 2005/12/01 or later.
 %
 % This work has the LPPL maintenance status `maintained'.
-% 
+%
 % The Current Maintainer of this work is Naheel Faisal.
 
 \NeedsTeXFormat{LaTeX2e}
@@ -177,16 +177,22 @@
 % and sections in-text referencing
 % By default, colors are off because your thesis should stand-alone
 % when printed. However, it is nice to have the TOC clickable in the PDF.
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
 \hypersetup{
   colorlinks=false, % set true if you want colored links
   linktoc=all,     % set to all if you want both sections and subsections linked
   linkcolor=blue,  % choose some color if you want links to stand out
   citecolor=green,
-	urlcolor=blue,
-	linktocpage,
+  urlcolor=blue,
+  linktocpage,
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+  pdfauthor={\author},
+  pdftitle={\title},
+  pdfkeywords={Qatar University, TAD, https://github.com/Naheel-Azawy/qu-tad-template}
+}
 
 \long\def\abstract#1{\gdef\@abstract{#1}}
 

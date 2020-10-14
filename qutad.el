@@ -1,4 +1,5 @@
 (with-eval-after-load 'ox-latex
+  (customize-set-value 'org-latex-with-hyperref nil)
   (add-to-list 'org-latex-classes
                '("qutad"
                  "\\documentclass{qutad}"
