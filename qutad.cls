@@ -1,5 +1,5 @@
 %% qutad.cls
-%% Copyright 2020 Naheel Faisal <naheelazawy@gmail.com>
+%% Copyright 2020-2021 Naheel Faisal <naheelazawy@gmail.com>
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -166,6 +166,7 @@
 \usetikzlibrary{calc}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
+\pgfplotsset{compat=1.17} % fix the version of pgfplots
 \usepackage[backend=biber,natbib=true,style=\mybibstyle]{biblatex}
 \bibliography{refs}
 \usepackage{float}
@@ -188,9 +189,11 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% more math symbols and commands
+\usepackage{amsmath}
+
+% pdf keywords
 \hypersetup{
-  pdfauthor={\author},
-  pdftitle={\title},
   pdfkeywords={Qatar University, TAD, https://github.com/Naheel-Azawy/qu-tad-template}
 }
 
@@ -347,4 +350,9 @@
 
 }
 
-\setstretch{2} % global double spacing
+% global double spacing
+\setstretch{2}
+
+% single spacing for verbatim
+\let\oldv\verbatim
+\def\verbatim{\par\setstretch{1}\oldv}
