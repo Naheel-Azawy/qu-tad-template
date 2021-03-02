@@ -2,7 +2,7 @@
   This is an attempt to clone [[http://www.qu.edu.qa/research/graduate-studies/current-students/TAD-Services][Qatar University's TAD engineering template]] to LaTeX. Note that it is not official yet.
 
 ** Is this usable?
-   Some students confirmed submitting using this template for Spring and Fall 2020. So, probably yes. If anything is wrong TAD would reply specifying their comments. If they do and you don't know how to fix it, start an issue here.
+   Several students confirmed submitting using this template for Spring and Fall 2020. So, probably yes. If anything is wrong TAD would reply specifying their comments. If they do and you don't know how to fix it, start an issue here.
 
 ** Usage
    ~thesis.tex~ should contain you actual work and ~refs.bib~ is your bibliography file.
@@ -32,6 +32,8 @@
    | thesis-org.org | The equivalent of thesis.tex but in org-mode. |
    | qutad.el       | Evaluate this to add the LaTeX class.         |
    |----------------+-----------------------------------------------|
+
+   And don't forget to use [[https://github.com/jkitchin/org-ref][org-ref]]! It works like charm with this setup.
 
 ** Contribution
    Pull requests are welcomed on the [[https://github.com/Naheel-Azawy/qu-tad-template][repo]]. If any difference from the original Word template was found please report an issue [[https://github.com/Naheel-Azawy/qu-tad-template/issues][here]].

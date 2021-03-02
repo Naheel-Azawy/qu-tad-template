@@ -168,7 +168,6 @@
 \usepackage{pgfplotstable}
 \pgfplotsset{compat=1.17} % fix the version of pgfplots
 \usepackage[backend=biber,natbib=true,style=\mybibstyle]{biblatex}
-\bibliography{refs}
 \usepackage{float}
 \usepackage{enumitem}
 \usepackage{longtable}

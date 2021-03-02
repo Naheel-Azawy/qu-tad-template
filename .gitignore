@@ -2,3 +2,5 @@ thesis-org.pdf
 thesis-org.tex
 thesis-org.synctex.gz
 thesis.synctex.gz
+.thesis-org.build
+.thesis.build
