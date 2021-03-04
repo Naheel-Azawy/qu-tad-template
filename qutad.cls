@@ -355,3 +355,17 @@
 % single spacing for verbatim
 \let\oldv\verbatim
 \def\verbatim{\par\setstretch{1}\oldv}
+
+% \printbibliography but to match the template
+\newcommand{\printreferences} {
+  {
+    % add the Bibliography to the Table of Contents
+    \cleardoublepage
+    \ifdefined\phantomsection
+    \phantomsection  % makes hyperref recognize this section properly for pdf link
+    \else
+    \fi
+    \addcontentsline{toc}{chapter}{References}
+  }
+  \printbibliography[title = {REFERENCES}]
+}

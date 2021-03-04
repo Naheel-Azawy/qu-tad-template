@@ -116,17 +116,7 @@ This is level 4. Table \ref{sampletable} is a sample table with a sample citatio
 
 \lipsum
 
-{
-  % add the Bibliography to the Table of Contents
-  \cleardoublepage
-  \ifdefined\phantomsection
-  \phantomsection  % makes hyperref recognize this section properly for pdf link
-  \else
-  \fi
-  \addcontentsline{toc}{chapter}{References}
-}
-
-\printbibliography[title = {REFERENCES}]
+\printreferences
 
 % Appendices if you need them. Remove this section if you don't.
 \begin{appendices}

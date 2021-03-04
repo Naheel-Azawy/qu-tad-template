@@ -105,16 +105,7 @@
 
      #+LaTeX: \lipsum
 
-#+LaTeX: {
-#+LaTeX:   % add the Bibliography to the Table of Contents
-#+LaTeX:   \cleardoublepage
-#+LaTeX:   \ifdefined\phantomsection
-#+LaTeX:   \phantomsection  % makes hyperref recognize this section properly for pdf link
-#+LaTeX:   \else
-#+LaTeX:   \fi
-#+LaTeX:   \addcontentsline{toc}{chapter}{References}
-#+LaTeX: }
-#+LaTeX: \printbibliography[title = {REFERENCES}]
+#+LaTeX: \printreferences
 
 # Appendices if you need them. Remove this section if you don't.
 #+LaTeX: \begin{appendices}
