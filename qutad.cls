@@ -1,5 +1,5 @@
 %% qutad.cls
-%% Copyright 2020-2021 Naheel Faisal <naheelazawy@gmail.com>
+%% Copyright 2020-present Naheel Faisal <naheelazawy@gmail.com>
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
