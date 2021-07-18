@@ -4,6 +4,7 @@
 # APA bibliography style is used by default. IEEE style is provided as an option.
 # Comment the line below to enable APA style
 #+LaTeX_CLASS_OPTIONS: [ieee]
+# Pass 'numsec' option to number sections, subsections, and subsubsections
 
 # select the name of the bibliography file
 #+LaTeX_HEADER: \bibliography{refs.bib}

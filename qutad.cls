@@ -19,7 +19,9 @@
 \LoadClass[12pt]{report}
 
 \newcommand{\mybibstyle}{apa}
+\newcommand{\numsections}{0}
 \DeclareOption{ieee}{\renewcommand{\mybibstyle}{ieee}}
+\DeclareOption{numsec}{\renewcommand{\numsections}{1}}
 \ProcessOptions\relax
 
 \usepackage{geometry}
@@ -34,25 +36,26 @@
 \usepackage{titlesec}
 \titlespacing*{\chapter}{0pt}{-25pt}{0pt}
 \titleformat{\chapter}
-            {\normalfont\centering}
-            {\MakeUppercase{\chaptertitlename}\ \thechapter:\ }
-            {0cm}
-            {\MakeUppercase}
+{\normalfont\centering}
+{\MakeUppercase{\chaptertitlename}\ \thechapter:\ }
+{0cm}
+{\MakeUppercase}
+
+\if\numsections1
 \titleformat{\section}
-            {\normalfont\centering}
-            {}
-            {0cm}
-            {}
+{\normalfont\centering}{\thesection.\ }{0cm}{}
 \titleformat{\subsection}
-            {\normalfont\centering\itshape}
-            {}
-            {0cm}
-            {}
+{\normalfont\centering\itshape}{\thesubsection.\ }{0cm}{}
 \titleformat{\subsubsection}
-            {\normalfont\itshape}
-            {}
-            {0cm}
-            {}
+{\normalfont\itshape}{\thesubsubsection.\ }{0cm}{}
+\else
+\titleformat{\section}
+{\normalfont\centering}{}{0cm}{}
+\titleformat{\subsection}
+{\normalfont\centering\itshape}{}{0cm}{}
+\titleformat{\subsubsection}
+{\normalfont\itshape}{}{0cm}{}
+\fi
 
 % table of content styles
 \usepackage{titletoc}
