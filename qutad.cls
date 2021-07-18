@@ -279,6 +279,12 @@
     Committee Member \\~\\
     \fi
 
+    \ifdefined\committeefour
+    \noindent \makebox[2.5in]{\hrulefill} \\
+    \committeefour \\
+    Committee Member \\~\\
+    \fi
+
   \end{flushright}
 
   \vfill
