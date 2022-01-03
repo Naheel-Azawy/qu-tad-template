@@ -23,7 +23,6 @@
 \DeclareOption{ieee}{\renewcommand{\mybibstyle}{ieee}}
 \DeclareOption{numsec}{\renewcommand{\numsections}{1}}
 \ProcessOptions\relax
-
 \usepackage{geometry}
 \geometry{a4paper,lmargin=1.5in,rmargin=1in,tmargin=1in,bmargin=1in,includehead,includefoot}
 \usepackage{setspace} % set the stretching
@@ -31,7 +30,6 @@
 \usepackage{titling} % to use \theauthor, \thetitle, ...
 \usepackage{indentfirst} % indent first line of every paragraph
 \usepackage{lipsum} % for testing...
-
 % chapter header style
 \usepackage{titlesec}
 \titlespacing*{\chapter}{0pt}{-25pt}{0pt}
@@ -348,7 +346,12 @@
   \addcontentsline{toc}{chapter}{LIST OF FIGURES}
   \listoffigures
   \newpage
-
+  
+  \begin{refsection}
+   %\nocite{sarker2021deep,4_slimeni2019cooperative} add YOUR SOURCES HERE
+  \printbibliography[title = {LIST OF PUBLICATIONS}]
+ \end{refsection}
+  
   % page numbering
   \pagenumbering{arabic}
   \setcounter{page}{1}
