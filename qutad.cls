@@ -346,12 +346,16 @@
   \addcontentsline{toc}{chapter}{LIST OF FIGURES}
   \listoffigures
   \newpage
-  
+
+  % LOP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifdefined\publications
   \begin{refsection}
-   %\nocite{sarker2021deep,4_slimeni2019cooperative} add YOUR SOURCES HERE
-  \printbibliography[title = {LIST OF PUBLICATIONS}]
- \end{refsection}
-  
+    \nocite{\publications}
+    \printbibliography[title = {LIST OF PUBLICATIONS}]
+  \end{refsection}
+  \newpage
+  \fi
+
   % page numbering
   \pagenumbering{arabic}
   \setcounter{page}{1}

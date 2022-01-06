@@ -58,6 +58,9 @@
 # Name of third committee member, if needed.
 # #+LaTeX_HEADER: \def \committeethree{Dr. Committee Three}
 
+# List of publications. Comment if not needed
+#+LaTeX_HEADER: \def \publications{mybib1,mybib2}
+
 #+LaTeX_HEADER: \abstract{
 #+LaTeX_HEADER:   An abstract is a concise account of the thesis or dissertation and should state the problem, describe the procedure or method used, and summarize the conclusions reached. An abstract is required for all papers. A maximum of 350 words are recommended for dissertations and a maximum of 150 for theses. Format the paragraphs with the same layout used in the document. All lines on this page are double spaced.
 #+LaTeX_HEADER: }
